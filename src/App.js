@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Buttons from './components/Calculator/Buttons.js';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 const Home = () => (
@@ -13,8 +12,6 @@ const Home = () => (
 const Calculator = () => (
   <div style={styles.container}>
     <h2>Calculator</h2>
-    {/*(<Display/>*/}
-    <Buttons/>
   </div>
 );
 
@@ -24,24 +21,12 @@ const Converter = () => (
   </div>
 );
 
-const homeStyles = {
-
-};
-
-const calcStyles = {
-
-};
-
-const convertStyles = {
-
-};
-
 const styles = {
   container: {
     flex: 1,
     marginLeft: 'auto',
     marginRight: 'auto',
-    maxWidth: 600,
+    maxWidth: 400,
     minHeight:400,
     borderWidth:2,
     borderColor:'black',

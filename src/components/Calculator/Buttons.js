@@ -1,35 +1,12 @@
-import React, { Text } from 'react';
+import React, { Text, View } from 'react';
 
 
 class Buttons extends React.Component{
  render() {
     return(
-         <div style={styles.buttonContainer}>
-         	<ButtonRow>
-						<Button>1</Button>
-        		<Button>2</Button>
-        		<Button>3</Button>
-        		<Button>4</Button>
-         	</ButtonRow>
-         	<ButtonRow>
-	        	<Button>5</Button>
-	        	<Button>6</Button>
-	        	<Button>7</Button>
-	        	<Button>8</Button>
-	        </ButtonRow>
-	        <ButtonRow>
-		       	<Button>9</Button>
-	          <Button>0</Button>
-	          <Button>+</Button>
-	          <Button>-</Button>
-	        </ButtonRow>
-	        <ButtonRow>
-	         	<Button>CLEAR</Button>
-	          <Button>BLANK</Button>
-	          <Button>BLANK</Button>
-	          <Button>BLANK</Button>
-	        </ButtonRow>
-	      </div>
+      <View style={styles.buttonContainer}>
+      	<Text></Text>
+      </View>
     )
  };
    
@@ -38,28 +15,27 @@ class Buttons extends React.Component{
 
 const Button = () => (
 	<div style={styles.button}>
-	</div>
-);
-
-const ButtonRow = () => (
-	<div style={styles.buttonRow}>
+	 BUTTON
 	</div>
 );
 
 const styles = {
 	button: {
 		flex: 1,
-		flexDirection: 'horizontal',
 		width: 100,
-		height: 100,
+		height: 10,
 		borderWidth: '2px',
 		borderColor: 'black',
-		color: 'black',
+		backgroundColor: 'black',
+		color: 'white',
+	},
+	buttonContainer: {
+		flex: 1,
+		maxWidth: 400,
 	},
 	buttonRow: {
-		flex: 4,
-		height:120,
-		backgroundColor: 'blue',
+		flex:4,
+		flexDirection: 'row',
 		marginTop:20,
 		marginBottom: 20,
 	},
