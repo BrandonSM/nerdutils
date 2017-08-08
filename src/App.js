@@ -1,34 +1,20 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Buttons from './components/Calculator/Buttons.js';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
-
-/*class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
-}*/
-
 const Home = () => (
-  <div>
+  <div style={styles.container}>
     <h2>H</h2>
   </div>
 );
 
 const Calculator = () => (
-  <div>
+  <div style={styles.container}>
     <h2>Calculator</h2>
+    {/*(<Display/>*/}
+    <Buttons/>
   </div>
 );
 
@@ -37,6 +23,31 @@ const Converter = () => (
     <h2>Conversions</h2>
   </div>
 );
+
+const homeStyles = {
+
+};
+
+const calcStyles = {
+
+};
+
+const convertStyles = {
+
+};
+
+const styles = {
+  container: {
+    flex: 1,
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    maxWidth: 600,
+    minHeight:400,
+    borderWidth:2,
+    borderColor:'black',
+  },
+};
+
 
 /*
 const Topic = ({ match }) => (
